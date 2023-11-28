@@ -1,0 +1,47 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+.mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: goldenrod;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+}
+.topnav {
+    overflow: hidden;
+    background-color: whitesmoke;
+    position: relative;
+}
+
+.topnav #navLinks {
+    display: none;
+}
+
+.topnav a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    padding: 14px;
+    display: block;
+}
+
+.topnav a.icon {
+    background: transparent;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav a:hover {
+    background: transparent;
+    color: blue;
+}
+
+.active {
+    background-color: transparent;
+    color: blanchedalmond;
+}
