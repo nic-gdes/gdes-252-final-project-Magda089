@@ -11,15 +11,23 @@
     <div class="mobile-container">
 
         <!-- Top Navigation Menu -->
-        <div class="topnav">
-          <a href="#home" class="active">IMAGINARY SOLUTION</a>
-          <div id="navLinks">
-            <a href="#contact">CALCULATION TOOL</a>
-            <a href="#about">CONTACT US</a>
+        <nav class="topnav">
+          <div class="logo">
+              <img src="./src/imaginary-Solutions-logo.png" alt="Logo">
+              <a href="#home"></a>
           </div>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
+          <div class="menu-icon" onclick="toggleMenu()">
+              <i class="fa fa-bars"></i>
+          </div>
+          <div class="close-icon" onclick="toggleMenu()">
+              <i class="fa fa-times"></i>
+          </div>
+          <ul class="nav-links" id="navLinks">
+              <li><a href="#contact">CALCULATION TOOL</a></li>
+              <li><a href="#about">CONTACT US</a></li>
+          </ul>
+      </nav>
+          
         </div>
 
 

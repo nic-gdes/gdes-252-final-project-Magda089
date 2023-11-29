@@ -1,47 +1,90 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .mobile-container {
-    max-width: 480px;
+    max-width: 100%;
     margin: auto;
-    background-color: goldenrod;
-    height: 500px;
+    background-color: #333;
     color: white;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 .topnav {
-    overflow: hidden;
-    background-color: whitesmoke;
-    position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+position: relative;
+padding: 15px;
+background-color: white;
 }
 
-.topnav #navLinks {
+.topnav .logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    }
+    .topnav .logo img {
+        width: 80px;
+        height: auto;
+        margin-right: 200px;
+        margin-left: 0;
+    }
+    
+    .topnav .logo a {
+        text-decoration: none;
+        font-size: 18px;
+        color: blanchedalmond;
+    }
+
+.menu-icon,  .close-icon {
+    cursor: pointer;
+    position: absolute;
+    font-size: 20px;
+    color:#FFA500;
+    top: 15px;
+}
+
+.menu-icon {
+    right: 15px;   
+}
+
+.close-icon {
+display: none;
+right: 15px;
+}
+
+.nav-links {
+    list-style: none;
     display: none;
+    width: 100%;
+    text-align: center;
+    background-color: #FFA500;
+    /* border-radius: 0 0 10px 10px; */
+    padding: 15px;
 }
 
-.topnav a {
+.nav-links.show {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-links li {
+    margin-bottom: 10px;
+}
+
+.nav-links li a {
     text-decoration: none;
     font-size: 16px;
-    color: black;
-    padding: 14px;
+    color: whitesmoke;
+    padding: 10px;
     display: block;
+    border-radius: 5px;
 }
 
-.topnav a.icon {
-    background: transparent;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
 
-.topnav a:hover {
-    background: transparent;
-    color: blue;
-}
-
-.active {
-    background-color: transparent;
-    color: blanchedalmond;
+.nav-links li a:hover {
+    background-color:#e39402;
 }
