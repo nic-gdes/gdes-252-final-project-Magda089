@@ -26,11 +26,20 @@ background-color: white;
     align-items: center;
     margin-bottom: 10px;
     }
-    .topnav .logo img {
-        width: 80px;
+    .topnav .logo img{
+        max-width: 100px;
+        height: auto;
+        margin-right: 180px;
+        }
+     /* .logo img {
+        width: 100px;
         height: auto;
         margin-right: 200px;
         margin-left: 0;
+        
+    } */
+    .logo-2 {
+        display: none;
     }
     
     .topnav .logo a {
@@ -108,15 +117,114 @@ header, article, footer {
 h1, h2 {
     color: #e39402 ;
     font-size: 24px;
+    margin-top: auto;
+    margin-bottom: 10px;
 }
 
 p {
  color: #555;
  font-size: 16px;
+ /* margin-bottom: 20px; */
+ margin-top: 10px;
 }
 
 img {
     max-width: 100%;
     height: auto;
     border: 8px;
+    margin-bottom: auto;
+}
+
+footer {
+    background-color: #234876;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    color: white;
+    font-size: 10px;
+}
+
+@media screen and (min-width: 769px) {
+    .container {
+        grid-template-columns: repeat(2fr, 1fr);
+    }
+    .article {
+        grid-template-columns: 2fr, 1fr;
+    }
+
+    .logo img {
+        display: none;
+    }
+
+    .topnav {
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+        
+    }
+
+    .topnav .logo-2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+
+    .logo-2 img {
+        max-width: 100px;
+        height: auto;
+    }
+
+    .topnav #navLinks {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .topnav .logo-2 img {
+        margin: 0;
+    }
+
+   .menu-icon, .close-icon {
+    top: 15px;
+   }
+   .menu-icon {
+    display: none;
+    right: 15px;
+   }
+
+   .nav-links {
+    display: flex;
+    width: auto;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+   }
+
+   .nav-links.show {
+    display: flex;
+    flex-direction: row;
+   }
+
+   .nav-links li {
+    margin: 0;
+   }
+   .nav-links li a {
+    color: #555;
+}
+
+.nav-links li a:hover {
+    background-color: transparent; /* Set background color to transparent on hover */
+    color: #e39402; /* Set hover text color to orange */
+}
+   .nav-links li:last-child {
+    margin-right: 0;
+   }
+   .mobile-container {
+    background-color: transparent;
+   }
 }
