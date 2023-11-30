@@ -88,3 +88,35 @@ right: 15px;
 .nav-links li a:hover {
     background-color:#e39402;
 }
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+header, article, footer {
+    margin-bottom: 20px;
+}
+ article {
+    text-align: left;
+ }
+
+h1, h2 {
+    color: #e39402 ;
+    font-size: 24px;
+}
+
+p {
+ color: #555;
+ font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 8px;
+}
