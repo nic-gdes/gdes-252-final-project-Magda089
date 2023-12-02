@@ -141,6 +141,7 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
+    margin-bottom: 0
 }
 footer p {
     color: white;
@@ -207,7 +208,7 @@ cursor: pointer;
     margin-bottom: 16px;
 }
 
-/* Modal */
+/* Modal for mobile size*/
 .modal {
     display: none;
     position: fixed;
@@ -221,11 +222,15 @@ cursor: pointer;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     text-align: center;
 }
+.modal-show-button {
+    padding: 10px 20px;
+    font-size: 14px;
+}
 .modal-button {
     text-align: center;
 }
 
-.show {
+.modal-show-button {
     background-color: white; 
     color: black; 
     border: 2px solid #234876;
@@ -238,23 +243,12 @@ cursor: pointer;
     cursor: pointer;
     box-shadow: 0 9px #999;
 }
-.show:hover {
+.modal-show-button:hover {
     background-color: #234876;
     color: white;
 }
-
-.show:active {
+.modal-show-button:active {
     background-color: #1c3954;
-}
-
-.mask {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
 }
 .close {
     position: absolute;
@@ -273,6 +267,8 @@ cursor: pointer;
     color: white;
 }
 
+
+/* DESKTOP SIZE SCREEN STYLES */
 @media (min-width: 768px) {
     /* Hero-Image */
     .hero-container {
