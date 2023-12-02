@@ -22,3 +22,24 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+// Calculation Tool
+
+function convertToCelsius () {
+  const farenheit = parseFloat (document.getElementById('inputNumber').value);
+  const celsius = (farenheit - 32) * 5/9;
+  displayResult(celsius);
+}
+function convertToMiles () {
+  const feet = parseFloat (document.getElementById('inputNumber').value);
+  const miles = feet / 5280;
+  displayResult(miles);
+}
+function convertToCentimeters () {
+  const inches = parseFloat (document.getElementById('inputNumber').value);
+  const centimeters = inches * 2.54;
+  displayResult(centimeters);
+}
+
+function displayResult(result) {
+  document.getElementById('result').innerText = `Result: ${result.toFixed(2)}`;
+}

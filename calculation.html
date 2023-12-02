@@ -13,7 +13,7 @@
      <nav class="topnav">
         <div class="logo">
             <a href="#home">
-                <img src="./src/imaginary-Solutions-logo.png" alt="Logo">
+                <img src="./assets/images/imaginary-Solutions-logo.png" alt="Logo">
             </a>
         </div>
       <div class="menu-icon" onclick="toggleMenu()">
@@ -37,10 +37,48 @@
      <div class="hero-container">
         <div class="hero-image"></div>
         <div class="hero-text">
-            <h1>CALCULATION TOOL</h1>
+            <h1>Welcome to InnoCalc!</h1>
         </div>      
     </div>
-    
+    <!-- Content -->
+    <div class="article-center">
+        <h2>InnoCalc - Futuristic Solution Generator</h2>
+        <h2></h2>
+        <p>InnoCalc is an innovative tool designed to tackle everyday challenges through a creative lens.</p>
+        <p>Although it specializes in a select range of conversions, it brings an imaginative touch to
+            these essential transformations.</p>
+            <h2>Functionalities</h2>
+                <h3>Fahrenheit to Celsius Conversion: </h3>
+                    <p>Transform temperatures from Fahrenheit to Celsius effortlessly with our imaginative touch.</p>
+                <h3>Feet to Miles Conversion:</h3>
+                    <p>Experience a futuristic twist when converting lengths from feet to miles with InnoCalc.</p>
+                <h3>Inches to Centimeters Conversion: </h3>
+                    <p>Witness the magic as InnoCalc converts inches to centimeters with an imaginative flair.</p>
+                <h2>How It Works:</2>
+                <h3>Enter Your Value:</h3>
+                    <p>Input your value into the provided field. Let your imagination fuel this transformation!</p>
+                 <h3>Select Your Conversion: </h3>
+                    <p>Choose from the available conversion options: Fahrenheit to Celsius, Feet to Miles, or Inches
+                       to Centimeters.</p>
+                <h3>Generate Your Imaginative Result:</h3>
+                <p>Click your chosen calculation and watch as InnoCalc crafts an imaginative and accurate
+                    conversion for you.</p>
+                    <p>Join the Imaginative Journey!</p>
+                    <br>
+                    <p>InnoCalc may have a limited range of functions, but its imaginative touch makes every
+                        transformation an adventure. </p>
+                        <p>Explore these essential conversions with a sprinkle of creativity
+                            and innovation.</p>
+        </div>
+    <!-- Calculation tool -->
+    <div class="calculation-wrapper">
+            <input type="number" id="inputNumber" placeholder="Enter a number"> 
+            <button class="calc-button" onclick="convertToCelsius() ">F to C</button>
+            <button class="calc-button" onclick="convertToMiles() ">Ft to Miles</button>
+            <button class="calc-button" onclick="convertToCentimeters() ">inch to cm</button>
+            <div id="result"></div>
+    </div>
+    <!-- Footer -->
     <footer>
         <p> Copyright &copy 2023 IMAGINARY SOLUTION; </p>
        <p> All Rights Reserved</p>
