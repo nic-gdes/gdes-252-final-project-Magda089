@@ -617,4 +617,9 @@ cursor: pointer;
     font-size: 18px;
     color:#234876;    
 }
+/* Darko Mode */
+.dark-mode {
+    background-color: black;
+    color: white;
+}
 }

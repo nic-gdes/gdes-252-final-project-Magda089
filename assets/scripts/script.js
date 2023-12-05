@@ -43,3 +43,9 @@ function convertToCentimeters () {
 function displayResult(result) {
   document.getElementById('result').innerText = `Result: ${result.toFixed(2)}`;
 }
+
+// Darko Mode
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
