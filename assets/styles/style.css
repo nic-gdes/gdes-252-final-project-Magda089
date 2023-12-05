@@ -4,6 +4,11 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+/* Darko Mode */
+.dark-mode {
+    background-color: black;
+    color: white;
+}
 
 .mobile-container {
     max-width: 100%;
@@ -228,6 +233,7 @@ cursor: pointer;
 }
 .modal-button {
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .modal-show-button {
@@ -267,6 +273,17 @@ cursor: pointer;
     color: white;
 }
 
+/* Darko Mode */
+.dark-mode {
+    background-color: black;
+    color:grey;
+}
+.dark-mode li {
+    color: grey;
+}
+.dark-mode p {
+    color: grey;
+}
 
 /* DESKTOP SIZE SCREEN STYLES */
 @media (min-width: 768px) {
@@ -277,8 +294,18 @@ cursor: pointer;
         justify-content: left; 
         /* text-align: left; */
         height: 60vh; /* height  */
-        background: url('../images/imaginary-Solutions-hero.jpeg') center/cover no-repeat;
     }
+    .hero-home {
+    background: url('../images/imaginary-Solutions-hero.jpeg') center/cover no-repeat;
+
+    }
+    .hero-contact {
+        background: url('../images/imaginary-Solutions-hand.jpeg') center/cover no-repeat;
+        }
+        .hero-calculation {
+            background: url('../images/Imaginary-Solution-Calculation.jpeg') center/cover no-repeat;
+        
+            }
 
     .hero-text {
         text-align: left; /* Align text to the left */
@@ -470,12 +497,13 @@ h3 {
 }
 /* Animation2 */
 .ball-bounce {
-    width: 50px;
-    height: 50px;
+    width: 20px;
+    height: 20px;
     background-color: #3498db;
-    border: 10px solid orange;
+    border: 6px solid orange;
     border-radius: 50%;
     animation: bounce 2s infinite;
+    margin-left: 10px;
 }
 
 @keyframes bounce {
@@ -620,6 +648,14 @@ cursor: pointer;
 /* Darko Mode */
 .dark-mode {
     background-color: black;
-    color: white;
+    color:grey;
 }
+.dark-mode p {
+    color: grey;
+}
+.dark-mode li {
+    color: grey;
+}
+
+
 }
