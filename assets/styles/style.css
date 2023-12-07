@@ -311,7 +311,37 @@ cursor: pointer;
   background: #125688;
   color: white;
 }
+/* Darko Mode */
+/* Dark mode switch button */
+.dark-mode-btn {
+    background-color: #f8f8f8; /* Light background color */
+    color: #333; /* Dark text color */
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Dark mode switch button in dark mode */
+  .dark-mode .dark-mode-btn {
+    background-color: #333; /* Dark background color in dark mode */
+    color: #f8f8f8; /* Light text color in dark mode */
+  }
+  
+  /* Moon and sun icons for the button */
+  .dark-mode-btn::before {
+    content: "\1F319"; /* Moon icon */
+    margin-right: 5px;
+  }
+  
+  .dark-mode .dark-mode-btn::before {
+   
+    content: "\2600"; /* Sun icon */
 
+  }
+  
 /* DESKTOP SIZE SCREEN STYLES */
 @media (min-width: 768px) {
     /* Hero-Image */
