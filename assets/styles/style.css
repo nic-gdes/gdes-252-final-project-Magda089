@@ -693,12 +693,14 @@ cursor: pointer;
   
   /* Moon and sun icons for the button */
   .dark-mode-btn::before {
-    content: "\2600"; /* Sun icon */
+    content: "\1F319"; /* Moon icon */
     margin-right: 5px;
   }
   
   .dark-mode .dark-mode-btn::before {
-    content: "\1F319"; /* Moon icon */
+   
+    content: "\2600"; /* Sun icon */
+
   }
   
 
