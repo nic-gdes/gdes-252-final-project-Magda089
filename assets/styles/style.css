@@ -449,7 +449,7 @@ cursor: pointer;
         align-items: center;
         justify-content: space-between;
         padding: 15px;
-        
+    
     }
 
     .topnav .logo-2 {
@@ -460,13 +460,14 @@ cursor: pointer;
     }
 
     .logo-2 img {
-        max-width: 100px;
+        max-width: 200px;
         height: auto;
     }
 
     .topnav #navLinks {
         display: flex;
         flex-direction: row;
+        align-items: center;
     }
 
     .topnav .logo-2 img {
@@ -487,6 +488,7 @@ cursor: pointer;
     background-color: transparent;
     padding: 0;
     margin: 0;
+    
    }
 
    .nav-links.show {
@@ -496,6 +498,7 @@ cursor: pointer;
 
    .nav-links li {
     margin: 0;
+    
    }
    .nav-links li a {
     color: #555;
@@ -732,7 +735,11 @@ cursor: pointer;
     content: "\2600"; /* Sun icon */
 
   }
-  
+
+/* White color for links in dark mode */
+.dark-mode .topnav a {
+    color: #f8f8f8; 
+}
 
 /* Social Media Icons*/
 .fa {
